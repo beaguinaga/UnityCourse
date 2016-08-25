@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class LevelManager : MonoBehaviour {
+		void Example() {
+        Screen.showCursor = false;
+    }
 
 	public void LoadLevel(string name) {
 		Debug.Log("New level load: " + name);
