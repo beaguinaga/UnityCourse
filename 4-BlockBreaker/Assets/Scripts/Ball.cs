@@ -31,7 +31,7 @@ public class Ball : MonoBehaviour {
 	void OnCollisionEnter2D (Collision2D collision) {
 		// Ball does not trigger sound when brick is destroyed.
 		// Possibly because the brick is not there.
-		Vector2 tweak = new Vector2(Random.Range(0f, 0.2f), Random.Range(0f, 0.2f) );
+		Vector2 tweak = new Vector2(Random.Range(0f, 0.2f), Random.Range(0.4f, 0.2f) );
 		
 		if(hasStarted) {
 			GetComponent<AudioSource>().Play();
