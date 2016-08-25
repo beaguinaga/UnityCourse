@@ -2452,6 +2452,7 @@ GameObject:
   - 50: {fileID: 1758667260}
   - 114: {fileID: 1758667259}
   - 60: {fileID: 1758667258}
+  - 114: {fileID: 1758667261}
   m_Layer: 0
   m_Name: baseball_bat
   m_TagString: Untagged
@@ -2592,6 +2593,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1758667261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1758667255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32105ac21a3ac40e6be7a44294e4792b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1782334073
 Prefab:
   m_ObjectHideFlags: 0

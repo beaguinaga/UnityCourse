@@ -2,9 +2,8 @@
 using System.Collections;
 
 public class LevelManager : MonoBehaviour {
-		void Example() {
-        Screen.showCursor = false;
-    }
+
+	private LoseCollider currentLevel;
 
 	public void LoadLevel(string name) {
 		Debug.Log("New level load: " + name);
@@ -26,5 +25,9 @@ public class LevelManager : MonoBehaviour {
 		if (Brick.breakableCount <= 0) {
 			LoadNextLevel();
 		}
+	}
+
+	public void ContinueLevel(int name) {
+		Application.LoadLevel(LoseCollider.currentLevel);
 	}
 }
